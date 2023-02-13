@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki&display=swap');
+
+body {
+    text-align: center;
+    background-color: seashell;
+    font-family: 'Noto Serif Khojki', serif;
+} 
+
+.contact-me {
+    background-color: oldlace;
+}
+
+h2 {
+    text-decoration: underline;
+}
