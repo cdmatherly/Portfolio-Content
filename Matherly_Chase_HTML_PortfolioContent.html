@@ -23,7 +23,7 @@
         <h2>Technologies</h2>
     </div>
     <div>
-        <table>
+        <table class="tech-table">
             <thead>
                 <tr>
                     <th scope="row">Front-End</th>
@@ -31,7 +31,10 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>HTML5</td>
+                    <td><img class="badge" id="html5" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"></td>
+                </tr>
+                <tr>
+                    <td><img class="badge" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"></td>
                 </tr>
             </tbody>
         </table>
@@ -46,12 +49,12 @@
                 <input type="email" name="email" class="contact-me" id="email">
             </label>
         </div>
-        <div>
+        <div class="textbox">
             <label for="message">Message: </label>
             <textarea name="message" class="contact-me" id="message" cols="30" rows="3"></textarea>
         </div>
         <div>
-            <input type="submit" value="Send Message">
+            <button type="submit">Send Message</button>
         </div>
     </form>
 </body>

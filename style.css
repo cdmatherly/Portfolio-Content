@@ -4,12 +4,23 @@ body {
     text-align: center;
     background-color: seashell;
     font-family: 'Noto Serif Khojki', serif;
+    font-size: 1em
 } 
-
+.tech-table {
+    margin: 0 auto;
+}
+.badge {
+    width: 80px;
+    height: 25px;
+    border-radius: 2vw;
+}
 .contact-me {
     background-color: oldlace;
 }
 
 h2 {
     text-decoration: underline;
+}
+.textbox {
+    margin: 10px;
 }
