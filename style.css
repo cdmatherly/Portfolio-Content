@@ -1,26 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Serif Khojki', serif;
+    color: #c2c9b8
+}
 body {
     text-align: center;
-    background-color: seashell;
-    font-family: 'Noto Serif Khojki', serif;
-    font-size: 1em
+    height: 100vh;
+    padding-top: 20px;
 } 
+.tech-icon {
+    width: 25px;
+}
+#prof-img {
+    width: 350px;
+    box-shadow: 0px 0px 15px black;
+}
+h3 {
+    text-decoration: underline;
+}
 .tech-table {
     margin: 0 auto;
 }
-.badge {
-    width: 80px;
-    height: 25px;
-    border-radius: 2vw;
-}
-.contact-me {
-    background-color: oldlace;
-}
-
-h2 {
-    text-decoration: underline;
+.tech-table img {
+    width: 60px;
 }
 .textbox {
     margin: 10px;
+}
+
+.gradient-custom {
+    background: rgb(2,0,36);
+    background: linear-gradient(142deg, rgba(2,0,36,1) 0%, rgba(72,17,93,1) 35%, rgba(12,57,66,1) 100%);
+    background-repeat:no-repeat;
+  }
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 15px;
+    font-size: 12px;
+}
+footer img {
+    margin-left: 2px;
 }
