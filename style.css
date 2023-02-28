@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
 /* Utilities */
 
@@ -15,12 +16,32 @@
     color: #c2c9b8;
 }
 body {
-    text-align: center;
+    background-color: #333;
+}
+.container-fluid {
+    padding: 0;
+}
+.gradient-custom {
+    background: rgb(2,0,36);
+    background: linear-gradient(142deg, rgba(2,0,36,1) 0%, rgba(72,17,93,1) 35%, rgba(12,57,66,1) 100%);
+    background-repeat:no-repeat;
+    /* position: sticky;
+    top: 0; */
+}
+.first-block {
     height: 100vh;
-    padding-top: 20px;
-} 
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-areas: 
+        'one one one'
+        'two two two'
+        'three three three';
+    /* justify-content: center; */
+    /* align-items: center; */
+}
 .textFocusIn {
-	animation: textFocusIn 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: textFocusIn 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 /**
  * ----------------------------------------
@@ -40,22 +61,14 @@ body {
     }
   }
 .name {
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-.name::after{
-    content:'';
-    position: absolute;
-    display: block;
-    margin: 0 auto;
-    width: 290px;
-    height: 1px;
-    margin-top: 0px;
-    bottom: 0;
-    background-color: whitesmoke;
-    animation: scale-up-hor-center 1s 0.75s ease-in-out both;
-    z-index: -1;
+    /* position: relative; */
+    /* display: flex; */
+    /* justify-content: center; */
+    font-size: 4em;
+    grid-area: two;
+    justify-self: center;
+    align-self: start;
+    /* margin-top: 50px; */
 }
 /**
  * ----------------------------------------
@@ -70,7 +83,19 @@ body {
       transform: scaleX(1);
     }
   }
-  
+.role {
+    grid-area: two;
+    justify-self: center;
+    align-self: start;
+    margin-top: 85px;
+}
+.bi-chevron-double-down {
+    font-size: 3em;
+    grid-area: three;
+    justify-self: center;
+    align-self: end;
+    margin-bottom: 25px;
+}
 .icons {
     text-decoration: none;
     filter:brightness(0);
@@ -97,15 +122,7 @@ h3 {
     margin: 10px;
 }
 
-.gradient-custom {
-    background: rgb(2,0,36);
-    background: linear-gradient(142deg, rgba(2,0,36,1) 0%, rgba(72,17,93,1) 35%, rgba(12,57,66,1) 100%);
-    background-repeat:no-repeat;
-  }
 footer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
     margin-right: 15px;
     font-size: 12px;
 }
