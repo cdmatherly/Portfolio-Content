@@ -4,22 +4,73 @@
     padding: 0;
     margin: 0;
     font-family: 'Noto Serif Khojki', serif;
-    color: #c2c9b8
+    color: #c2c9b8;
 }
 body {
     text-align: center;
     height: 100vh;
     padding-top: 20px;
 } 
+.textFocusIn {
+	animation: textFocusIn 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/**
+ * ----------------------------------------
+ * animation textFocusIn
+ * ----------------------------------------
+ */
+ @keyframes textFocusIn {
+    0% {
+      transform: scaleY(0);
+      opacity: 0;
+      filter: blur(12px);
+    }
+    100% {
+      transform: scaleY(1);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+.name {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.name::after{
+    content:'';
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    width: 290px;
+    height: 1px;
+    margin-top: 0px;
+    bottom: 0;
+    background-color: whitesmoke;
+    animation: scale-up-hor-center 1s 0.75s ease-in-out both;
+    z-index: -1;
+}
+/**
+ * ----------------------------------------
+ * animation scale-up-hor-center
+ * ----------------------------------------
+ */
+ @keyframes scale-up-hor-center {
+    0% {
+      transform: scaleX(0);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  
 .icons {
     text-decoration: none;
-}
-.icons i{
     filter:brightness(0);
-    transition: filter 0.3s ease;
+    transition: all 0.3s ease;
 }
-.icons i:hover{
+.icons:is(:hover, :focus){
     filter: brightness(100%);
+    transform: scale(1.2);
 }
 #prof-img {
     width: 350px;
