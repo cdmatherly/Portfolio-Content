@@ -1,94 +1,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
-/* Utilities */
-
-.scale-animate {
-    transition: transform 0.3s ease;
-}
-.scale-animate:hover{
-    transform: scale(1.1);
-}
 * {
     padding: 0;
     margin: 0;
     font-family: 'Noto Serif Khojki', serif;
-    color: #c2c9b8;
+    color: #D3DDC5;
 }
+
 body {
+    scroll-behavior: smooth;
     background-color: #333;
 }
-.container-fluid {
-    padding: 0;
+
+/* ======================
+Utilities
+====================== */
+
+.scale-animate {
+    transition: transform 0.3s ease;
 }
-.gradient-custom {
-    background: rgb(2,0,36);
-    background: linear-gradient(142deg, rgba(2,0,36,1) 0%, rgba(72,17,93,1) 35%, rgba(12,57,66,1) 100%);
-    background-repeat:no-repeat;
-    /* position: sticky;
-    top: 0; */
+
+.scale-animate:hover {
+    transform: scale(1.1);
 }
-.first-block {
-    height: 100vh;
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    grid-template-areas: 
-        'one one one'
-        'two two two'
-        'three three three';
-    /* justify-content: center; */
-    /* align-items: center; */
-}
+
 .textFocusIn {
-	animation: textFocusIn 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: textFocusIn 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-/**
- * ----------------------------------------
- * animation textFocusIn
- * ----------------------------------------
- */
- @keyframes textFocusIn {
-    0% {
-      transform: scaleY(0);
-      opacity: 0;
-      filter: blur(12px);
-    }
-    100% {
-      transform: scaleY(1);
-      filter: blur(0px);
-      opacity: 1;
-    }
-  }
-.name {
-    /* position: relative; */
-    /* display: flex; */
-    /* justify-content: center; */
-    font-size: 4em;
-    grid-area: two;
-    justify-self: center;
-    align-self: start;
-    /* margin-top: 50px; */
-}
+
 /**
  * ----------------------------------------
  * animation scale-up-hor-center
  * ----------------------------------------
  */
- @keyframes scale-up-hor-center {
+@keyframes scale-up-hor-center {
     0% {
-      transform: scaleX(0);
+        transform: scaleX(0);
     }
     100% {
-      transform: scaleX(1);
+        transform: scaleX(1);
     }
-  }
+}
+
+/**
+ * ----------------------------------------
+ * animation textFocusIn
+ * ----------------------------------------
+ */
+@keyframes textFocusIn {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+        filter: blur(12px);
+    }
+    100% {
+        transform: scaleY(1);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+/* ======================
+Top Container
+====================== */
+
+.container-fluid {
+    padding: 0;
+}
+
+.gradient-custom {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(142deg, rgba(2, 0, 36, 1) 0%, rgba(72, 17, 93, 1) 35%, rgba(12, 57, 66, 1) 100%);
+    background-repeat: no-repeat;
+    /* position: sticky;
+    top: 0; */
+}
+
+.first-block {
+    height: 100vh;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-areas:
+        'one one one'
+        'two two two'
+        'three three three';
+}
+
+.name {
+    font-size: 4em;
+    grid-area: two;
+    justify-self: center;
+    align-self: start;
+}
+
 .role {
     grid-area: two;
     justify-self: center;
     align-self: start;
     margin-top: 85px;
 }
+
 .bi-chevron-double-down {
     font-size: 3em;
     grid-area: three;
@@ -96,39 +109,81 @@ body {
     align-self: end;
     margin-bottom: 25px;
 }
+
+/* ======================
+Bottom container
+====================== */
+.bottom {
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+.about {
+    grid-column-start: 2;
+    justify-self: start;
+    padding: 50px;
+    flex-direction: column;
+
+}
+.about p {
+    margin: 0;
+}
+.socials {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
 .icons {
     text-decoration: none;
-    filter:brightness(0);
+    filter: brightness(0);
     transition: all 0.3s ease;
 }
-.icons:is(:hover, :focus){
+
+.icons:is(:hover, :focus) {
     filter: brightness(100%);
     transform: scale(1.2);
 }
+
 #prof-img {
     width: 350px;
     box-shadow: 0px 0px 15px black;
 }
+
 h3 {
     text-decoration: underline;
 }
+
 .tech-table {
     margin: 0 auto;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
 }
+
 .tech-table img {
     width: 60px;
 }
-.textbox {
-    margin: 10px;
+
+.projects {
+    grid-row-start: 4;
+    grid-column-start: 2;
 }
 
+/* ======================
+Footer
+====================== */
 footer {
     margin-right: 15px;
     font-size: 12px;
+    position: absolute;
+    right: 0;
 }
-footer img {
-    margin-left: 2px;
-}
+
 .devicon {
+    margin-left: 2px;
     width: 20px;
+}
+.test {
+    background-color: red;
 }

@@ -13,43 +13,67 @@
 </head>
 
 <body class="">
-    <div class="container-fluid">
-            <div class="first-block gradient-custom">
-                <h1 class="textFocusIn name">Chase Matherly</h1>
-                <p class="role fs-4">Software Developer</p>
-                <i class="bi bi-chevron-double-down"></i>
+    <div class="first-block container-fluid gradient-custom">
+            <h1 class="textFocusIn name">Chase Matherly</h1>
+            <p class="role fs-4">Software Developer</p>
+            <i class="bi bi-chevron-double-down"></i>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid justify-content-center">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#about">About Me</a>
+              <a class="nav-link" href="#technologies">Technologies</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </div>
-        <!-- <div>
-            <img id="prof-img" src="https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/285631926_5392552667433822_5035328758001059315_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=F64mfUCi0MEAX_CK-mO&tn=zO4YoTHxROLIVROS&_nc_ht=scontent-lax3-1.xx&oh=00_AfBJg5HET9R3WwLGXar6jFnLHJ2oXxMmXdQh2RaXG9ysRg&oe=63EC61E9" alt="An image of Chase sitting on a motorcycle in from of a building">
-        </div> -->
+        </div>
+      </nav>
+    <div class="bottom container d-grid">
+        <!-- About Me -->
+        <div id="about" class="about d-flex">
+            <p>Hey!</p>
+            <p>I'm Chase.</p>
+            <p>I'm a software developer based in Los Angeles.</p>
+        </div>
         <!-- Social Links -->
-        <div class="row justify-content-center mb-4">
-            <div class="col-auto d-flex align-items-center gap-1">
-                <a class="icons" href="https://github.com/cdmatherly" target="_blank" rel="noreferrer noopener"><i class="devicon-github-original fs-4"></i>
-        </a>
-            </div>
-            <div class="col-auto d-flex align-items-center gap-1">
-                <a class="icons" href="https://www.linkedin.com/in/chasematherly/" target="_blank" rel="noreferrer noopener"><i class="devicon-linkedin-plain colored fs-4"></i></a>
-            </div>
+        <div class="socials d-flex justify-content-center gap-3 align-items-center">
+                <a class="icons" href="https://github.com/cdmatherly" target="_blank" rel="noreferrer noopener"><i
+                        class="devicon-github-original fs-4"></i>
+                </a>
+                <a class="icons" href="https://www.linkedin.com/in/chasematherly/" target="_blank"
+                    rel="noreferrer noopener"><i class="devicon-linkedin-plain colored fs-4"></i></a>
         </div>
         <!-- Technologies Card -->
-        <div class="row justify-content-center tech-table mb-5">
-            <h3 class="row justify-content-center">Technologies</h3>
+        <div id="technologies" class="tech-table justify-content-center align-items-center gap-2">
+            <h3 class="">Technologies</h3>
             <p class="fw-bold">Front-End</p>
-            <img class="scale-animate" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                alt="html5 icon">
-            <img class="scale-animate" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                alt="css3 icon">
-            <img class="scale-animate" id="js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript icon">
+            <div class="tech-icons d-flex gap-2">
+                <img class="scale-animate" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                    alt="html5 icon" />
+                <img class="scale-animate" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                    alt="css3 icon" />
+                <img class="scale-animate" id="js"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="javascript icon" />
+            </div>
         </div>
-        <div class="projects">
+        <div id="projects" class="projects">
             <p class="fs-2">Projects</p>
             <p>Stay tuned while this section grows!</p>
         </div>
     </div>
     <footer class="">
-        <p>Icons thanks to <a href="https://devicon.dev/" target="_blank" rel="noreferrer noopener">DevIcon<img class="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon/devicon-original.svg" alt="devicons icon"></a></p>
+        <p>
+            Icons thanks to
+            <a href="https://devicon.dev/" target="_blank" rel="noreferrer noopener">DevIcon<img class="devicon"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon/devicon-original.svg"
+                    alt="devicons icon" /></a>
+        </p>
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
