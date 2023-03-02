@@ -67,12 +67,12 @@ Utilities
 
 .slideDown {
 	animation: slideDown 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.6s backwards;
-    transition: transform .3s;
+    transition: transform .2s ease-in-out;
 }
 
 .slideDown:hover {
     /* animation: moveUp 1s ease; */
-    transform: translateY(-25px);
+    transform: translateY(-5px);
 }
 /**
  * ----------------------------------------
@@ -206,10 +206,7 @@ Top Container
     align-self: end;
     margin-bottom: 25px;
 }
-.chevron:hover {
-    /* animation: moveUp 1s; */
-    transform: translateY(-20px);
-}
+
 /* ======================
 Bottom container
 ====================== */
