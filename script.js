@@ -1,10 +1,19 @@
 var sec = document.querySelectorAll('.nav-link')
-window.onscroll = function() {myFunction()};
 
-function myFunction() {
-  if (document.body.scrollTop > sec[1].offsetTop) {
-    sec[0].classList.add("test");
+// Define the scroll threshold in pixels
+var scrollThreshold = sec[1].offsetHeight;
+
+// Add an event listener to the window object to detect scroll
+window.addEventListener('scroll', () => {
+  // Get the current scroll position
+  var scrollPosition = window.scrollY;
+
+  // Check if the scroll position has passed the threshold
+  if (scrollPosition > scrollThreshold) {
+    // Add the class to the element
+    sec[1].classList.add('test');
   } else {
-    sec[0].classList.remove("test");
-}
-}
+    // Remove the class from the element
+    sec[1].classList.remove('test');
+  }
+});
