@@ -12,30 +12,30 @@ window.addEventListener('scroll', () => {
   // Check if the scroll position has passed the threshold
   if (scrollPosition > 0 && scrollPosition < scrollThreshold[1]) {
     // Add the class to the element
-    link[0].classList.add('test');
-    link[1].classList.remove('test')
-    link[2].classList.remove('test')
-    link[3].classList.remove('test');
+    link[0].classList.add('active');
+    link[1].classList.remove('active')
+    link[2].classList.remove('active')
+    link[3].classList.remove('active');
   } 
   else if (scrollPosition > scrollThreshold[1] && scrollPosition < scrollThreshold[2]) {
     // Add the class to the element
-    link[0].classList.remove('test')
-    link[2].classList.remove('test')
-    link[3].classList.remove('test');
-    link[1].classList.add('test');
+    link[0].classList.remove('active')
+    link[2].classList.remove('active')
+    link[3].classList.remove('active');
+    link[1].classList.add('active');
   } 
   else if (scrollPosition > scrollThreshold[2] && scrollPosition < scrollThreshold[3]) {
     // Add the class to the element
-    link[0].classList.remove('test')
-    link[1].classList.remove('test')
-    link[3].classList.remove('test');
-    link[2].classList.add('test');
+    link[0].classList.remove('active')
+    link[1].classList.remove('active')
+    link[3].classList.remove('active');
+    link[2].classList.add('active');
   } 
   else if (scrollPosition > scrollThreshold[3]) {
     // Add the class to the element
-    link[0].classList.remove('test')
-    link[1].classList.remove('test')
-    link[2].classList.remove('test');
-    link[3].classList.add('test');
+    link[0].classList.remove('active')
+    link[1].classList.remove('active')
+    link[2].classList.remove('active');
+    link[3].classList.add('active');
   }
 });
