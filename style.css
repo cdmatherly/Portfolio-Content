@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
-:root{
+:root {
     --text-primary: #D3DDC5;
     --bg-dark: #333;
     --bg-light: #D3DDC5;
     --light-primary: ;
 }
+
 * {
     padding: 0;
     margin: 0;
@@ -29,8 +30,9 @@ Utilities
     vertical-align: middle;
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  }
-  .hvr-underline-from-center:after {
+}
+
+.hvr-underline-from-center:after {
     content: "";
     position: absolute;
     z-index: -1;
@@ -44,7 +46,10 @@ Utilities
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
 }
-.hvr-underline-from-center:hover:after, .hvr-underline-from-center:focus:after, .hvr-underline-from-center:active:after {
+
+.hvr-underline-from-center:hover:after,
+.hvr-underline-from-center:focus:after,
+.hvr-underline-from-center:active:after {
     left: 0;
     right: 0;
 }
@@ -62,11 +67,11 @@ Utilities
 }
 
 .swingIn {
-	animation: swingIn 1s ease-in-out .5s both;
+    animation: swingIn 1s ease-in-out .5s both;
 }
 
 .slideDown {
-	animation: slideDown 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.6s backwards;
+    animation: slideDown 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.6s backwards;
     transition: transform .2s ease-in-out;
 }
 
@@ -74,6 +79,7 @@ Utilities
     /* animation: moveUp 1s ease; */
     transform: translateY(-5px);
 }
+
 /**
  * ----------------------------------------
  * animation scale-up-hor-center
@@ -83,6 +89,7 @@ Utilities
     0% {
         transform: scaleX(0);
     }
+
     100% {
         transform: scaleX(1);
     }
@@ -99,6 +106,7 @@ Utilities
         opacity: 0;
         filter: blur(12px);
     }
+
     100% {
         transform: scaleY(1);
         filter: blur(0px);
@@ -111,18 +119,19 @@ Utilities
  * animation swingIn
  * ----------------------------------------
  */
- @keyframes swingIn {
+@keyframes swingIn {
     0% {
-      transform: rotateX(-100deg);
-      transform-origin: top;
-      opacity: 0;
+        transform: rotateX(-100deg);
+        transform-origin: top;
+        opacity: 0;
     }
+
     100% {
-      transform: rotateX(0deg);
-      transform-origin: top;
-      opacity: 1;
+        transform: rotateX(0deg);
+        transform-origin: top;
+        opacity: 1;
     }
-  }
+}
 
 /**
  * ----------------------------------------
@@ -131,12 +140,13 @@ Utilities
  */
 @keyframes slideDown {
     0% {
-      transform: translateY(-25px);
-      opacity: 0;
+        transform: translateY(-25px);
+        opacity: 0;
     }
+
     100% {
-      transform: translateY(0);
-      opacity: 1;
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
@@ -145,12 +155,13 @@ Utilities
  * animation moveUp
  * ----------------------------------------
  */
- @keyframes moveUp {
+@keyframes moveUp {
     0% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
+
     100% {
-      transform: translateY(-50px);
+        transform: translateY(-50px);
     }
 }
 
@@ -169,8 +180,6 @@ Top Container
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    /* position: sticky;
-    top: 0; */
 }
 
 .first-block {
@@ -215,6 +224,7 @@ Bottom container
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: repeat(4, 1fr);
 }
+
 .about {
     grid-column-start: 2;
     justify-self: center;
@@ -223,28 +233,34 @@ Bottom container
     gap: 15px;
 
 }
+
 .about p {
     margin: 0;
     flex: 2;
 }
-@media screen and (max-width: 990px){
+
+@media screen and (max-width: 990px) {
     .about {
         grid-column: span 3;
     }
 }
-@media screen and (max-width: 760px){
+
+@media screen and (max-width: 760px) {
     .about {
         grid-column: span 3;
     }
+
     .bottom {
         padding: 0 2rem;
     }
 }
-@media screen and (min-width: 760px){
+
+@media screen and (min-width: 760px) {
     .bottom {
         padding: 0 5rem;
     }
 }
+
 .socials {
     grid-column-start: 2;
     grid-row-start: 2;
@@ -285,8 +301,42 @@ h3 {
 .projects {
     grid-row-start: 4;
     grid-column-start: 2;
+    text-align: center;
+    padding-top: 55px;
 }
 
+.projectList {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.projectList .card {
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 200px;
+}
+
+.html {
+    color: #e34c27;
+}
+.javascript {
+    color: #f0d44c;
+}
+.python {
+    color: #5ea9eb;
+}
+.css {
+    color: #4266f5;
+}
 /* ======================
 Footer
 ====================== */
@@ -301,6 +351,7 @@ footer {
     margin-left: 2px;
     width: 20px;
 }
+
 .test {
     background-color: red;
 }
