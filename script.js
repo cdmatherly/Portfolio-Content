@@ -18,7 +18,7 @@ function removeClass(){
 function testFunc(){
   var scrollPosition = window.scrollY;
   for (var i = 0; i < scrollThreshold.length; i++){
-    if (scrollPosition > sect[i].offsetTop){
+    if (scrollPosition > (sect[i].offsetTop-15)){
       removeClass();
       link[i].classList.add('active');
     }
