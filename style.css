@@ -20,6 +20,36 @@ body {
     background-color: #333;
 }
 
+@media screen and (max-width: 990px) {
+    .about {
+        grid-column: span 3;
+    }
+}
+/* ======================
+Media Queries
+====================== */
+
+@media screen and (max-width: 760px) {
+    .about {
+        grid-column: span 3;
+    }
+
+    .bottom {
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .bottom {
+        padding: 0 5rem;
+    }
+}
+
+@media screen and (min-height: 974px){
+    .about {
+        margin-top: 3rem;
+    }
+};
 /* ======================
 Utilities
 ====================== */
@@ -81,10 +111,10 @@ Utilities
 }
 
 /**
- * ----------------------------------------
- * animation scale-up-hor-center
- * ----------------------------------------
- */
+* ----------------------------------------
+* animation scale-up-hor-center
+* ----------------------------------------
+*/
 @keyframes scale-up-hor-center {
     0% {
         transform: scaleX(0);
@@ -239,27 +269,6 @@ Bottom container
     flex: 2;
 }
 
-@media screen and (max-width: 990px) {
-    .about {
-        grid-column: span 3;
-    }
-}
-
-@media screen and (max-width: 760px) {
-    .about {
-        grid-column: span 3;
-    }
-
-    .bottom {
-        padding: 0 2rem;
-    }
-}
-
-@media screen and (min-width: 760px) {
-    .bottom {
-        padding: 0 5rem;
-    }
-}
 
 .socials {
     grid-column-start: 2;
