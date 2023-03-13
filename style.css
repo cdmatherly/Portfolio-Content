@@ -307,6 +307,10 @@ h3 {
     width: 60px;
 }
 
+.tech-icons i {
+    font-size: 60px;
+}
+
 .projects {
     grid-row-start: 4;
     grid-column-start: 2;
