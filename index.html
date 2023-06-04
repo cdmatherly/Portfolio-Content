@@ -33,9 +33,9 @@
             </div>
         </div>
     </nav>
-    <div class="bottom nav-sec container-fluid d-grid">
+    <div id="about" class="bottom nav-sec container-fluid d-grid">
         <!-- About Me -->
-        <div id="about" class="about d-flex align-items-center mt-5">
+        <div class="about d-flex align-items-center mt-5">
             <div class="about-left d-flex flex-column align-items-end">
                 <p class="fs-3">Hey!</p>
                 <p class="fs-4">I'm Chase.</p>
@@ -54,29 +54,71 @@
         <div id="technologies" class="tech-table nav-sec justify-content-center align-items-center gap-2 pt-5">
             <h3 class="">Technologies</h3>
             <div class="front-end">
-                <p class="fw-bold text-center">Front-End</p>
-                <div class="tech-icons d-flex gap-2">
-                    <img class="scale-animate" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                    alt="html5 icon">
-                    <img class="scale-animate" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                    alt="css3 icon">
-                    <img class="scale-animate" id="js"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                    alt="javascript icon">
+                <p class="fw-bold text-center">Languages</p>
+                <div class="tech-icons d-flex gap-2 justify-content-center">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <img class="scale-animate" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                        alt="html5 icon">
+                        <p class="text-center">HTML5</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <img class="scale-animate" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                        alt="css3 icon">
+                        <p class="text-center">CSS3</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <img class="scale-animate" id="js"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="javascript icon">
+                        <p class="text-center">JavaScript</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <img class="scale-animate" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                        alt="html5 icon">
+                        <p class="text-center">Python</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <i class="devicon-csharp-line colored scale-animate"></i>
+                        <p class="text-center">C#</p>
+                    </div>
                 </div>
             </div>
             <div class="back-end">
-                <p class="fw-bold text-center">Back-End</p>
-                <div class="tech-icons d-flex gap-2">
-                    <img class="scale-animate" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                    alt="html5 icon">
-                    <i class="devicon-flask-original scale-animate"></i>
+                <p class="fw-bold text-center">Frameworks/Libraries</p>
+                <div class="tech-icons d-flex gap-2 justify-content-center">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <img class="scale-animate" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="react icon">
+                        <p class="text-center">React</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <i class="devicon-flask-original scale-animate"></i>
+                        <p class="text-center">Flask</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <i class="devicon-dot-net-plain colored scale-animate"></i>
+                        <p class="text-center">.NET</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" class="scale-animate" alt="bootstrap 5 icon">
+                        <p class="text-center">Bootstrap 5</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" class="scale-animate" alt="tailwindcss icon">
+                        <p class="text-center">TailwindCSS</p>
+                    </div>
                 </div>
             </div>
             <div class="databases">
-                <p class="fw-bold text-center">Databases</p>
-                <div class="tech-icons d-flex justify-content-center">
-                    <i class="devicon-mysql-plain scale-animate"></i>
+                <p class="fw-bold text-center justify-content-center">Databases</p>
+                <div class="tech-icons d-flex gap-2 justify-content-center">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <i class="devicon-mysql-plain scale-animate"></i>
+                        <p class="text-center">MySQL</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <i class="devicon-mongodb-plain colored scale-animate"></i>
+                        <p class="text-center">MongoDB</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -99,7 +141,7 @@
                 <p class="fst-italic my-0">Python, Flask, MySQL</p>
                 <p class="mt-1">Random class and race generator for Dungeons and Dragons 5th Edition using Open5e and DND5eAPI</p>
                 <div class="d-flex justify-content-between">
-                    <img src="./img/dnd_builds_home.jpg" alt="" height="250px">
+                    <img src="./img/dnd_builds_home.jpg" alt="" id="buildsImg">
                     <div class="w-50 text-start">
                         <ul>
                             <li>Login and registration for saving builds to account</li>
@@ -111,7 +153,7 @@
             <div class="w-50 bg-dark rounded-4 bg-opacity-50 py-3 px-5 container">
                 <p class="fs-5 mb-0">Mystic Mimic</p>
                 <div class="d-flex justify-content-center gap-2 mb-0">
-                    <a class="" href="https://github.com/cdmatherly/dnd_builds" target="_blank"
+                    <a class="" href="https://github.com/cdmatherly/mystic-mimic" target="_blank"
                     rel="noreferrer noopener">Github</a>
                 </div>
                 <hr class="mt-2 mb-0"/>

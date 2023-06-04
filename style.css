@@ -320,6 +320,13 @@ h3 {
     padding-top: 55px;
 }
 
+#buildsImg {
+    height: auto;
+    width: auto;
+    max-width: 55%;
+    max-height: 55%;
+}
+
 .projectList {
     display: flex;
     flex-wrap: wrap;
@@ -352,6 +359,7 @@ h3 {
 .css {
     color: #4266f5;
 }
+
 /* ======================
 Footer
 ====================== */
