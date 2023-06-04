@@ -2,10 +2,10 @@ var link = document.querySelectorAll('.nav-link')
 var sect = document.querySelectorAll('.nav-sec')
 // Define the scroll threshold in pixels
 var homeTarget = document.querySelector("#home");
-var scrollThreshold = [sect[0].offsetTop, sect[1].offsetTop, sect[2].offsetTop, sect[3].offsetTop];
+var scrollThreshold = [(sect[0].offsetTop), sect[1].offsetTop, sect[2].offsetTop, sect[3].offsetTop];
 // console.log(sect[2].offsetTop)
 (function() {
-  getProjects();
+  // getProjects();
 })()
 
 // Add an event listener to the window object to detect scroll
