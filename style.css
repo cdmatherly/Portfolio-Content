@@ -250,7 +250,6 @@ Top Container
 Bottom container
 ====================== */
 .bottom {
-    height: 100vh;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: repeat(4, 1fr);
 }
@@ -296,14 +295,14 @@ h3 {
     text-decoration: underline;
 }
 
-.tech-table {
+/* .tech-table {
     padding-top: 5rem;
     margin: 0 auto;
     grid-row-start: 3;
     grid-column-start: 2;
     display: flex;
     flex-direction: column;
-}
+} */
 
 .tech-table img {
     width: 60px;
@@ -311,13 +310,6 @@ h3 {
 
 .tech-icons i {
     font-size: 60px;
-}
-
-.projects {
-    grid-row-start: 4;
-    grid-column-start: 2;
-    text-align: center;
-    padding-top: 55px;
 }
 
 #buildsImg {
