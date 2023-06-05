@@ -1,2 +1,2 @@
 ### Visit site at
-[chasematherly.com](chasematherly.com)
+[chasematherly.com](https://chasematherly.com)
