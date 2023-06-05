@@ -1,1 +1,2 @@
-WIP personal portolio project
+##Visit site at
+[chasematherly.com](chasematherly.com)
