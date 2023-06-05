@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="">
-    <div id="home" class="first-block nav-sec container-fluid gradient-custom">
+<body class="overflow-x-hidden vw-100">
+    <div id="home" class="first-block nav-sec container-fluid gradient-custom vh-100 d-flex flex-column justify-content-center align-items-center text-center relative">
             <h1 class="textFocusIn name hvr-underline-from-center">Chase Matherly</h1>
             <p class="role fs-4 swingIn">Software Developer</p>
-            <a href="#about" class="chevron slideDown"><i class="bi bi-chevron-double-down"></i></a>
+            <a href="#about" class="chevron slideDown position-absolute bottom-0 mb-5"><i class="bi bi-chevron-double-down"></i></a>
     </div>
-    <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top">
+    <nav class="navbar navbar-expand bg-body-tertiary sticky-top w-full">
         <div class="container-fluid justify-content-center">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -35,13 +35,13 @@
     </nav>
     <div id="about" class="bottom nav-sec container d-flex flex-column justify-content-around align-items-center mb-5">
         <!-- About Me -->
-        <div class="about d-flex align-items-center mt-5 mx-5">
+        <div class="about d-flex flex-column flex-sm-row align-items-center justify-content-center gap-3 mt-5 mx-5">
             <img src="./img/PSX_20220922_214408.jpg" alt="Chase working on a laptop" style="height: 250px" class="rounded-3">
-            <div class="about-left d-flex flex-column align-items-end">
-                <p class="fs-3">Hey!</p>
-                <p class="fs-4">I'm Chase.</p>
+            <div class="about-left d-flex flex-column align-items-center align-items-sm-end ">
+                <p class="fs-3 mb-0">Hey!</p>
+                <p class="fs-4 mb-0 text-end text-nowrap">I'm Chase.</p>
             </div>
-            <p class="">I'm a full-stack software developer based in Los Angeles. My other interests include things like Dungeons and Dragons, Lord of the Rings, Star Wars, and riding my motorcycle. <br> Want to build something?</p>
+            <p class="mb-4 mb-sm-0 text-center text-sm-start">I'm a full-stack software developer based in Los Angeles. My other interests include things like Dungeons and Dragons, Lord of the Rings, Star Wars, and riding my motorcycle. <br> Want to build something?</p>
         </div>
         <!-- Social Links -->
         <div class="socials d-flex justify-content-center gap-3 align-items-center">
@@ -54,9 +54,9 @@
         <!-- Technologies Card -->
         <div id="technologies" class="tech-table nav-sec justify-content-center align-items-center gap-2 pt-5 text-center">
             <h3 class="pt-4">Technologies</h3>
-            <div class="front-end">
-                <p class="fw-bold text-center">Languages/Runtimes</p>
-                <div class="tech-icons d-flex gap-2 justify-content-center">
+            <div class="front-end mt-3">
+                <p class="fw-bold text-center mt-3">Languages/Runtimes</p>
+                <div class="tech-icons d-flex gap-2 justify-content-center row-cols-4 row-cols-sm-auto flex-wrap">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <img class="scale-animate" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
                         alt="html5 icon">
@@ -89,8 +89,8 @@
                 </div>
             </div>
             <div class="back-end">
-                <p class="fw-bold text-center">Frameworks/Libraries</p>
-                <div class="tech-icons d-flex gap-2 justify-content-center">
+                <p class="fw-bold text-center mt-3">Frameworks/Libraries</p>
+                <div class="tech-icons d-flex gap-2 justify-content-center  row-cols-4 row-cols-sm-auto flex-wrap">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <img class="scale-animate" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="react icon">
                         <p class="text-center">React</p>
@@ -118,8 +118,8 @@
                 </div>
             </div>
             <div class="databases">
-                <p class="fw-bold text-center justify-content-center">Databases</p>
-                <div class="tech-icons d-flex gap-2 justify-content-center">
+                <p class="fw-bold text-center justify-content-center mt-3">Databases</p>
+                <div class="tech-icons d-flex gap-2 justify-content-center  row-cols-4 row-cols-sm-auto flex-wrap">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <i class="devicon-mysql-plain scale-animate"></i>
                         <p class="text-center">MySQL</p>
@@ -137,7 +137,7 @@
         <!-- <p>Stay tuned while this section grows!</p> -->
         <!-- <div class="projectList"></div> -->
         <div class="d-flex flex-column gap-4 p-4">
-            <div class="w-50 bg-dark rounded-4 bg-opacity-50 py-3 px-5 container">
+            <div class="bg-dark rounded-4 bg-opacity-50 py-3 px-5 container col-sm-6">
                 <p class="fs-5 mb-0">D&D Random Build Generator</p>
                 <div class="d-flex justify-content-center gap-2 mb-0">
                     <a class="" href="https://random5ebuilds.com" target="_blank"
@@ -149,9 +149,9 @@
                 <hr class="mt-2 mb-0"/>
                 <p class="fst-italic my-0">Python, Flask, MySQL</p>
                 <p class="mt-1 mb-4">Random class and race generator for Dungeons and Dragons 5th Edition using Open5e and DND5eAPI</p>
-                <div class="d-flex justify-content-between gap-2">
-                    <img src="./img/dnd_builds_home.jpg" alt="" id="buildsImg">
-                    <div class="w-50 text-start">
+                <div class="d-flex justify-content-between gap-2 buildsImg">
+                    <img src="./img/dnd_builds_home.jpg" alt="">
+                    <div class="col-sm-6 text-start mt-2">
                         <ul>
                             <li>Login and registration for saving builds to account</li>
                             <li>Password encryption using bcrypt</li>
@@ -159,7 +159,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-50 bg-dark rounded-4 bg-opacity-50 py-3 px-5 container">
+            <div class="bg-dark rounded-4 bg-opacity-50 py-3 px-5 container col-sm-6">
                 <p class="fs-5 mb-0">Mystic Mimic</p>
                 <div class="d-flex justify-content-center gap-2 mb-0">
                     <a class="" href="https://github.com/cdmatherly/mystic-mimic" target="_blank"
@@ -168,16 +168,16 @@
                 <hr class="mt-2 mb-0"/>
                 <p class="fst-italic my-0">React, Express, Node, MongoDB</p>
                 <p class="mt-1 mb-4">Dungeons and Dragons supplementary application for creating and tracking player characters</p>
-                <div class="d-flex justify-content-between gap-2">
-                    <video src="./img/MysticMimicPreview.webm" autoplay loop muted style="max-width:55%; width:auto; height:auto"></video>
-                    <div class="w-50 text-start">
+                <div class="d-flex justify-content-between gap-2 flex-column flex-sm-row buildsImg">
+                    <video src="./img/MysticMimicPreview.webm" autoplay loop muted ></video>
+                    <div class="col-sm-6 text-start mt-2">
                         <ul>
                             <li>Dungeon's and Dragons supplementary application for creating and tracking player characters</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="w-50 bg-dark rounded-4 bg-opacity-50 py-3 px-5 container">
+            <div class="bg-dark rounded-4 bg-opacity-50 py-3 px-5 container col-sm-6">
                 <p class="fs-5 mb-0">NirnGuessr</p>
                 <div class="d-flex justify-content-center gap-2 mb-0">
                     <a class="" href="https://nirnguessr.com" target="_blank"
@@ -189,9 +189,9 @@
                 <hr class="mt-2 mb-0"/>
                 <p class="fst-italic my-0">React, C# ASP.NET, MySQL</p>
                 <p class="mt-1 mb-4">GeoGuessr-style game set in the world of the MMORPG Elder Scrolls Online</p>
-                <div class="d-flex justify-content-between gap-2">
-                    <video src="./img/NirnGuessr.webm" autoplay loop muted style="max-width:55%; width:auto; height:auto"></video>
-                    <div class="w-50 text-start">
+                <div class="d-flex justify-content-between gap-2 flex-column flex-sm-row buildsImg">
+                    <video src="./img/NirnGuessr.webm" autoplay loop muted ></video>
+                    <div class="col-sm-6 text-start mt-2">
                         <ul>
                             <li>GeoGuessr-style game set in the world of the MMORPG Elder Scrolls Online</li>
                             <li>Regularly maintained with new content updates</li>
