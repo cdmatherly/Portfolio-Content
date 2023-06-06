@@ -16,8 +16,10 @@
 
 <body class="overflow-x-hidden vw-100">
     <div id="home" class="first-block nav-sec container-fluid gradient-custom vh-100 d-flex flex-column justify-content-center align-items-center text-center relative">
-            <h1 class="textFocusIn name hvr-underline-from-center">Chase Matherly</h1>
-            <p class="role fs-4 swingIn">Software Developer</p>
+            <div class="mb-5">
+                <h1 class="textFocusIn name hvr-underline-from-center">Chase Matherly</h1>
+                <p class="role fs-4 swingIn">Software Developer</p>
+            </div>
             <a href="#about" class="chevron slideDown position-absolute bottom-0 mb-5"><i class="bi bi-chevron-double-down"></i></a>
     </div>
     <nav class="navbar navbar-expand bg-body-tertiary sticky-top w-full">
@@ -138,23 +140,24 @@
         <!-- <div class="projectList"></div> -->
         <div class="d-flex flex-column gap-4 p-4">
             <div class="bg-dark rounded-4 bg-opacity-50 pt-3 pb-4 px-5 container col-sm-6">
-                <p class="fs-5 mb-0">D&D Random Build Generator</p>
+                <p class="fs-5 mb-0">NirnGuessr</p>
                 <div class="d-flex justify-content-center gap-2 mb-0">
-                    <a class="" href="https://random5ebuilds.com" target="_blank"
+                    <a class="" href="https://nirnguessr.com" target="_blank"
                     rel="noreferrer noopener">Live</a>
                     <p class="mb-0">|</p>
                     <a class="" href="https://github.com/cdmatherly/dnd_builds" target="_blank"
                     rel="noreferrer noopener">Github</a>
                 </div>
                 <hr class="mt-2 mb-0"/>
-                <p class="fst-italic my-0">Python, Flask, MySQL</p>
-                <p class="mt-1 mb-4">Random class and race generator for Dungeons and Dragons 5th Edition using Open5e and DND5eAPI</p>
-                <div class="d-flex justify-content-between gap-2 flex-column flex-sm-row buildsImg mx-auto">
-                    <img src="./img/dnd_builds_home.jpg" alt="" class="w-75 mx-auto">
-                    <div class="col-sm-6 text-start mt-2">
+                <p class="fst-italic my-0">React, C# ASP.NET, MySQL</p>
+                <p class="mt-1 mb-4">GeoGuessr-style game set in the world of the MMORPG Elder Scrolls Online</p>
+                <div class="d-flex justify-content-between gap-2 flex-column flex-sm-row  mx-auto">
+                    <video src="./img/NirnGuessr.webm" autoplay loop muted class="buildsImg"></video>
+                    <div class="text-start mt-2">
                         <ul>
-                            <li>Login and registration for saving builds to account</li>
-                            <li>Password encryption using bcrypt</li>
+                            <li>GeoGuessr-style game set in the world of the MMORPG Elder Scrolls Online</li>
+                            <li>Built using <span class="fst-italic fw-semibold">React Photo Sphere Viewer</span> and <span class="fst-italic fw-semibold">React Leaflet</span></li>
+                            <li>Regularly maintained with new content updates</li>
                         </ul>
                     </div>
                 </div>
@@ -168,33 +171,36 @@
                 <hr class="mt-2 mb-0"/>
                 <p class="fst-italic my-0">React, Express, Node, MongoDB</p>
                 <p class="mt-1 mb-4">Dungeons and Dragons supplementary application for creating and tracking player characters</p>
-                <div class="d-flex justify-content-between gap-2 flex-column flex-sm-row buildsImg mx-auto">
-                    <video src="./img/MysticMimicPreview.webm" autoplay loop muted class="w-75 mx-auto"></video>
-                    <div class="col-sm-6 text-start mt-2">
+                <div class="d-flex justify-content-between gap-2 flex-column flex-sm-row mx-auto">
+                    <video src="./img/MysticMimicPreview.webm" autoplay loop muted class="buildsImg"></video>
+                    <div class="text-start mt-2">
                         <ul>
-                            <li>Dungeon's and Dragons supplementary application for creating and tracking player characters</li>
+                            <li>Sign up with an account to create characters and campaigns</li>
+                            <li>Join other players' campaigns and communicate with live chat using <span class="fst-italic fw-semibold">Socket.io</span></li>
+                            <li>Roll randomized skill checks on your character sheet using the stats you selected at character creation</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="bg-dark rounded-4 bg-opacity-50 pt-3 pb-4 px-5 container col-sm-6">
-                <p class="fs-5 mb-0">NirnGuessr</p>
+                <p class="fs-5 mb-0">D&D Random Build Generator</p>
                 <div class="d-flex justify-content-center gap-2 mb-0">
-                    <a class="" href="https://nirnguessr.com" target="_blank"
+                    <a class="" href="https://random5ebuilds.com" target="_blank"
                     rel="noreferrer noopener">Live</a>
                     <p class="mb-0">|</p>
                     <a class="" href="https://github.com/cdmatherly/dnd_builds" target="_blank"
                     rel="noreferrer noopener">Github</a>
                 </div>
                 <hr class="mt-2 mb-0"/>
-                <p class="fst-italic my-0">React, C# ASP.NET, MySQL</p>
-                <p class="mt-1 mb-4">GeoGuessr-style game set in the world of the MMORPG Elder Scrolls Online</p>
-                <div class="d-flex justify-content-between gap-2 flex-column flex-sm-row buildsImg mx-auto">
-                    <video src="./img/NirnGuessr.webm" autoplay loop muted class="w-75 mx-auto"></video>
-                    <div class="col-sm-6 text-start mt-2">
+                <p class="fst-italic my-0">Python, Flask, MySQL</p>
+                <p class="mt-1 mb-4">Random class and race generator for Dungeons and Dragons 5th Edition using Open5e and DND5eAPI</p>
+                <div class="d-flex justify-content-between gap-2 flex-column flex-sm-row mx-auto">
+                    <video src="./img/RandomBuilds.webm" autoplay loop muted class="buildsImg"></video>
+                    <div class="text-start mt-2">
                         <ul>
-                            <li>GeoGuessr-style game set in the world of the MMORPG Elder Scrolls Online</li>
-                            <li>Regularly maintained with new content updates</li>
+                            <li>Login and registration for saving builds to account</li>
+                            <li>Edit saved build names and any information about the build</li>
+                            <li>Password encryption using bcrypt</li>
                         </ul>
                     </div>
                 </div>
