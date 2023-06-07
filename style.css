@@ -16,7 +16,7 @@
 }
 
 body {
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
     background-color: #333;
 }
 
